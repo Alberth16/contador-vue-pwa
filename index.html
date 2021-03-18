@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!-- Android -->
+    <!-- Color de barra de titulos -->
+    <meta name="theme-color" content="#41b883">
+
+    <!-- optimizacion de SEO -->
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- IOS -->
+    <!-- Barra de titlulos -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Iconos -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/favicon.ico">
+    <link rel="apple=touch-startup" href="./img/">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">    
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <title>Contador</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <div id="app" class="app"> 
+        <h1 class="title"> {{title}} </h1> 
+        <hr/>
+        <h3 class="count">{{count}}</h3>
+        <hr/>
+        <div class="buttons">
+            <button @click="modCount('dis',1)">-1</button>
+            <button @click="modCount('add',2)">+1</button>
+        </div>
+    </div>
+
+    <script src="./Lsw.js"></script>
+    <script src="./js/func.js"></script>
+    <script src="./js/mountApp.js"></script>
+</body>
+</html>
